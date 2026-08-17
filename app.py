@@ -127,7 +127,12 @@ with overview_tab:
     overlap_display["comparison"] = overlap_display.apply(
         lambda row: f"{METHOD_CONFIG[row['method_1']]['label']} vs {METHOD_CONFIG[row['method_2']]['label']}", axis=1
     )
-    st.bar_chart(overlap_display.set_index("comparison")["jaccard_similarity"], color="#475569")
+    for row in overlap_display.itertuples(index=False):
+        similarity = float(row.jaccard_similarity)
+        st.progress(
+            similarity,
+            text=f"{row.comparison}: {similarity:.3f}",
+        )
     st.dataframe(
         overlap_display[["comparison", "shared_edges", "union_edges", "jaccard_similarity", "method_1_coverage", "method_2_coverage"]],
         hide_index=True,
