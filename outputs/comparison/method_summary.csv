@@ -1,0 +1,4 @@
+﻿method,active_nodes,edges,density,connected_components,average_clustering,total_edge_weight,relation_definition
+cooccurrence,83,1144,0.33617396414928,1,0.659921758303586,9308.0,same body paragraph
+dialogue,58,85,0.0514216575922565,1,0.19295476402364134,369.0,explicit named target or adjacent named speech turns
+semantic_context,63,97,0.049667178699436765,5,0.3486772486772487,67.763984978199,thresholded mutual nearest-neighbour context similarity

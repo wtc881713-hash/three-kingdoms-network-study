@@ -1,0 +1,4 @@
+﻿method_1,method_2,shared_edges,union_edges,jaccard_similarity,method_1_coverage,method_2_coverage
+cooccurrence,dialogue,85,1144,0.0743006993006993,0.0743006993006993,1.0
+cooccurrence,semantic_context,77,1164,0.0661512027491409,0.0673076923076923,0.7938144329896907
+dialogue,semantic_context,14,168,0.08333333333333333,0.16470588235294117,0.14432989690721648
