@@ -1,0 +1,16 @@
+labels:
+  - cooperation
+  - hierarchy_loyalty
+  - kinship
+  - friendship_brotherhood
+  - hostility_conflict
+  - deception_manipulation
+  - affection_romance
+  - no_clear_relation
+  - uncertain
+
+direction_values: [A_to_B, B_to_A, bidirectional, unclear]
+polarity_values: [positive, negative, mixed, neutral, unclear]
+explicitness_values: [explicit, implicit, inferred, unclear]
+temporality_values: [stable, temporary, changing, unclear]
+status_values: [pending, reviewed]

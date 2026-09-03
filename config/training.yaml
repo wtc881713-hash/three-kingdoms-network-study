@@ -1,0 +1,14 @@
+experiment_name: round0_five_label_frozen_minilm
+random_seed: 42
+source_annotations: data/annotation/annotation_batch_01_reviewed_v2.csv
+split_directory: data/model/round0_five_label
+output_directory: outputs/model/round0_five_label_frozen_minilm
+split_sizes:
+  train: 12
+  validation: 4
+  test: 4
+selection_metric: macro_f1_all_observed_labels
+c_values: [0.01, 0.1, 1.0, 10.0, 100.0]
+class_weight_options: [none, balanced]
+test_policy: evaluate_once_after_validation_selection
+status: exploratory_five_label_baseline

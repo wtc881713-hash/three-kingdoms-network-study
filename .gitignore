@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.cache/
+node_modules/
+.env
+.env.*
+.streamlit/secrets.toml
+*.docx
+*.pdf
+*.xlsx
+data/
+outputs/release/
